@@ -26,3 +26,12 @@ w metodach testowych raczej bez ifów i petli
 
   @ParameterizedTest
     void isBlank() {
+
+    input.equals("STOP") - tu mamy obiekt ktory moze byc nullem
+    i byc null pointer exception
+    ("STOP").equals.input - tu ok bedzie
+
+
+
+    ctrl shift  kod dora/dół
+    nie gubi nawiasów

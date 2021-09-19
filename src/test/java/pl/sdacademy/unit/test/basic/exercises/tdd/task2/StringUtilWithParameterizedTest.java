@@ -38,6 +38,17 @@ class StringUtilWithParameterizedTest {
         //póki co ma sie wywalac bo zrobime refactor
     }
 
+    @Test //tu juz nie musimy parametryzowac bo 1
+    void shouldReturnTrueIfInputIsNull () {
+        //dobrze to dac na poczatek (optymalnie)
+        //when
+        boolean result = StringUtilWithParameterized.isBlank(null);
+        //then
+        assertTrue(result);
+        assertThat(result).isTrue();
+        //poszło red, udawa bp null point exception
+    }
+
 
 
 
