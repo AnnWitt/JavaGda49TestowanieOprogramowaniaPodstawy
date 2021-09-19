@@ -47,7 +47,9 @@ class CalculatorWithExceptionTest {
         //assertj
         assertThatThrownBy(
                 ()-> calculator.divide(2, 0))
-                .hasMessage("Cannot divide by 0")
+               // .hasMessage("Cannot divide by 0") //bedzie failed bo
+                // niespojde z tym z metody
+                .hasMessage("Cannot divide by zero!") //bedzie failed
                 .isInstanceOf(ArithmeticException.class);    //do sprawdzenia typow
 
     }

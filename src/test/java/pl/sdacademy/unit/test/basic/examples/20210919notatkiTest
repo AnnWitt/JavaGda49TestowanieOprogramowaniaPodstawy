@@ -11,3 +11,18 @@ assertThrows(ArithmeticException.class,
             z lambd ale poki co zapamietac
 
             isInstanceOf(ArithmeticException.class);    //do sprawdzenia typow
+
+task4
+
+ctrl lewy klik - podglad metod
+
+TDD - test driven development - najpierw testy potem dopisanie kodu (ale tylko dot, danego testu)
+np najpierw null i zeby był true, test passes to refactor
+//red (za 1 razem failed), green (implementacja aby wczesniejszy test byl pozytywny), blue
+
+//parametryzacja testów
+
+w metodach testowych raczej bez ifów i petli
+
+  @ParameterizedTest
+    void isBlank() {
