@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class AssertJExampleTest {
 
     @Test
-    void assertJExample() {
+    void assertJExample() { //rrr
         //given
         String input = "programowanie w javie";
         //then
